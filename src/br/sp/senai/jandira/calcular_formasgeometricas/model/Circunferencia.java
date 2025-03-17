@@ -12,18 +12,19 @@ public class Circunferencia {
 		return raio;
 	}
 	
-	public double calcularCircunferencia() {
-		double resultcircunferencia = Math.PI * (raio * raio);
-		return resultcircunferencia;
+	public double calcularArea() {
+		double area = Math.PI * (raio * raio);
+		return area;
 	}
 	
 	public void mostrarDados() {
+		double area = calcularArea();
 		System.out.println("\n--------------");
 		System.out.println("CIRCULO");
 		System.out.println("--------------");
 		System.out.printf("Raio: %s\n", raio);
-		System.out.printIn("Circunferencia: %s\n")
-		System.out.println("==============");
+		System.out.printf("Circunferencia: %s\n", area);
+		System.out.println("=====================");
 	}
 	
 }

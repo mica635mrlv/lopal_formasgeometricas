@@ -36,6 +36,8 @@ public class Retangulo {
 		double perimetro = calcularPerimetro();
 		
 		System.out.println("--------------------");
+		System.out.println("CÁLCULO DE FORMAS GEOMÉTRICAS");
+		System.out.println("--------------------");
 		System.out.printf("RETÂNGULO \n");
 		System.out.println("--------------------");
 		System.out.printf("Base: %s \n", base);
@@ -43,7 +45,6 @@ public class Retangulo {
 		System.out.printf("Area: %s \n", area);
 		System.out.printf("Perimetro: %s \n", perimetro);
 		System.out.printf("=====================");
-		
 	}
 	
 }

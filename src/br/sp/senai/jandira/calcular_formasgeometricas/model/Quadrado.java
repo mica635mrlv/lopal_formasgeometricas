@@ -1,29 +1,37 @@
 package br.sp.senai.jandira.calcular_formasgeometricas.model;
 
 public class Quadrado {
-	private int lado;
+	private double lado;
 
-
-	public void setLado(int lado) {
-		if (lado >= 1) {
-			this.lado = lado;
-		} else {
-			System.out.println("Valor Inválido");
-		}
+	public void setLado(double lado) {
+		this.lado = lado;
 	}
 	
-	public int getLado() {
+	public double getLado() {
 		return lado;
 	}
 	
 	public double calcularArea() {
-		double resultadoArea = lado * lado;
-		return resultadoArea;
+		double area = lado * lado;
+		return area;
 	}
 
 	public double calcularPerimetro() {
-		double resultadoPerimetro = lado * 4;
-		return resultadoPerimetro;
+		double perimetro = lado * 4;
+		return perimetro;
+	}
+	
+	public void mostrarDados () {
+		double area = calcularArea();
+		double perimetro = calcularPerimetro();
+		
+		System.out.println("--------------------");
+		System.out.printf("QUADRADO \n");
+		System.out.println("--------------------");
+		System.out.printf("Lado: %s \n", lado);
+		System.out.printf("Area: %s \n", area);
+		System.out.printf("Perimetro: %s \n", perimetro);
+		System.out.printf("=====================");
 	}
 	
 }
