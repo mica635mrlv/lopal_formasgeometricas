@@ -44,7 +44,7 @@ public class Trapezio {
 		System.out.printf("Base Maior: %s \n", baseMaior);
 		System.out.printf("Base Menor: %s \n", baseMenor);
 		System.out.printf("Altura: %s \n", altura);
-		System.out.printf("Area: %s \n", area);
+		System.out.printf("Área: %s \n", area);
 		System.out.printf("=====================");
 	}
 	

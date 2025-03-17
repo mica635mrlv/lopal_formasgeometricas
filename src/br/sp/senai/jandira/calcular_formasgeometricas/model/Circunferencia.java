@@ -23,7 +23,7 @@ public class Circunferencia {
 		System.out.println("CIRCULO");
 		System.out.println("--------------");
 		System.out.printf("Raio: %s\n", raio);
-		System.out.printf("Circunferencia: %s\n", area);
+		System.out.printf("Circunferência: %s\n", area);
 		System.out.println("=====================");
 	}
 	

@@ -35,15 +35,13 @@ public class Retangulo {
 		double area = calcularArea();
 		double perimetro = calcularPerimetro();
 		
-		System.out.println("--------------------");
-		System.out.println("CÁLCULO DE FORMAS GEOMÉTRICAS");
-		System.out.println("--------------------");
+		System.out.println("\n--------------------");
 		System.out.printf("RETÂNGULO \n");
 		System.out.println("--------------------");
 		System.out.printf("Base: %s \n", base);
 		System.out.printf("Altura: %s \n", altura);
-		System.out.printf("Area: %s \n", area);
-		System.out.printf("Perimetro: %s \n", perimetro);
+		System.out.printf("Área: %s \n", area);
+		System.out.printf("Perímetro: %s \n", perimetro);
 		System.out.printf("=====================");
 	}
 	

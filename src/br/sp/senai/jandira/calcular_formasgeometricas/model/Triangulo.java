@@ -34,7 +34,7 @@ public class Triangulo {
 	System.out.println("--------------------");
 	System.out.printf("Base: %s \n", base);
 	System.out.printf("Altura: %s \n", altura);
-	System.out.printf("Area: %s \n", area);
+	System.out.printf("Área: %s \n", area);
 	System.out.println("=====================");
 	
 }

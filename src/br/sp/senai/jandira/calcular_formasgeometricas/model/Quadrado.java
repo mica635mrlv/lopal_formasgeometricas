@@ -29,8 +29,8 @@ public class Quadrado {
 		System.out.printf("QUADRADO \n");
 		System.out.println("--------------------");
 		System.out.printf("Lado: %s \n", lado);
-		System.out.printf("Area: %s \n", area);
-		System.out.printf("Perimetro: %s \n", perimetro);
+		System.out.printf("Área: %s \n", area);
+		System.out.printf("Perímetro: %s \n", perimetro);
 		System.out.printf("=====================");
 	}
 	
