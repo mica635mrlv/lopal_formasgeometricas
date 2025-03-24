@@ -2,10 +2,14 @@ package br.sp.senai.jandira.calcular_formasgeometricas.model;
 
 import java.util.Scanner;
 
+import br.sp.senai.jandira.calcular_formasgeometricas.ui.Menu;
+
 public class CalculoDePoligonos {
 
 	public static void calcularRetangulo() {
-	
+
+		Menu.criarMenu();
+		
 		Retangulo retangulo = new Retangulo();
 		Scanner leitor = new Scanner(System.in);
 		
@@ -20,7 +24,6 @@ public class CalculoDePoligonos {
 		retangulo.mostrarDados();
 		
 		leitor.close();
-		
 	}
 	
 }

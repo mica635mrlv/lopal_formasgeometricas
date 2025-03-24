@@ -1,42 +1,56 @@
 package br.sp.senai.jandira.calcular_formageometrica;
 
-import br.sp.senai.jandira.calcular_formasgeometricas.model.Circunferencia;
-import br.sp.senai.jandira.calcular_formasgeometricas.model.Menu;
-import br.sp.senai.jandira.calcular_formasgeometricas.model.Quadrado;
-import br.sp.senai.jandira.calcular_formasgeometricas.model.Retangulo;
-import br.sp.senai.jandira.calcular_formasgeometricas.model.Trapezio;
-import br.sp.senai.jandira.calcular_formasgeometricas.model.Triangulo;
+import java.util.Scanner;
+
+import br.sp.senai.jandira.calcular_formasgeometricas.ui.Menu;
 
 public class CalcularFormas {
 
 	public static void main(String[] args) {
 		
-		Menu.criarMenu();
+		int contador = 0;
+		while (contador <= 10) {
+			int resultado = 9 * contador;
+			System.out.println("9 x " + contador + " = " + 9 * contador);
+			contador = contador + 1;
+		}
 		
-
-		Retangulo formaR = new Retangulo();
-		formaR.setAltura(67);
-		formaR.setBase(41);
-		formaR.mostrarDados();
+		System.out.println();
+		System.out.println("Números ímpares de 0 à 100");
+		System.out.println();
+		contador = 0;
+		while(contador <=100) {
+			if(contador % 2 == 1) {
+				System.out.println(contador);
+			}
+			contador++;
+			// contador = contador + 1;
+		}	
 		
-		Circunferencia formaC = new Circunferencia();
-		formaC.setRaio(5);
-		formaC.mostrarDados();
+		System.out.println();
+		System.out.println("--------------------");
+		Scanner leitor = new Scanner(System.in);
+		String resposta = "s";
+		while (resposta.equalsIgnoreCase("S")) {
+			System.out.print("Estamos dando voltas!");			
+			System.out.println("\n");			
+			System.out.print("Mais uma volta (S/N)? ");
+			resposta = leitor.next();
+			System.out.println("\n--------------------");	
+		}
 		
-		Quadrado formaQ = new Quadrado();
-		formaQ.setLado(25);
-		formaQ.mostrarDados();
+		leitor.close();
 		
-		Trapezio formaTz = new Trapezio();
-		formaTz.setAltura(123);
-		formaTz.setBaseMaior(56);
-		formaTz.setBaseMenor(90);
-		formaTz.mostrarDados();
+		//System.out.println(9 % 2);
 		
-		Triangulo formaTg = new Triangulo();
-		formaTg.setBase(4);
-		formaTg.setAltura(7);
-		formaTg.mostrarDados();
+		// int contador = 0;
+		// while(contador <= 10) {
+		//	System.out.println("9 x " + contador + " = " + 9 * contador);
+		//	contador = contador + 1;
+		// }
+		
+		//Menu.criarMenu();
+		
 	}
-
+	
 }
